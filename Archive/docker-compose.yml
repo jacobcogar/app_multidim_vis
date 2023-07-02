@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+  multidim_vis:
+    container_name: multidim_vis
+    restart: always
+    build: .
+    ports:
+      - "8012:8012"
+    command: gunicorn -w 1 -b :8012 app:server
+

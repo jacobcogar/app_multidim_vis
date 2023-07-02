@@ -1,0 +1,15 @@
+{
+    "serviceName": "multidim-vis",
+    "containers": {
+        "multidim-vis-container": {
+            "image": ":multidim-vis.latest.2",
+            "ports": {
+                "80": "HTTP"
+            }
+        }
+    },
+    "publicEndpoint": {
+        "containerName": "multidim-vis-container",
+        "containerPort": 80
+    }
+}
